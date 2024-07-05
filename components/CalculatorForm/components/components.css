@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .form-wrapper {
+    @apply flex items-center h-[40px] rounded-md overflow-hidden;
+    /* animation: dropwrapper 1s var(--i) forwards; */
+  }
+
+  .label-card {
+    @apply px-5 h-full flex items-center justify-center;
+    /* animation: dropwrapper 1s var(--i) forwards; */
+  }
+
+  .drop-wrapper {
+    @apply -translate-y-[200px];
+    animation: dropwrapper 1s var(--i) forwards;
+  }
+
+  @keyframes dropwrapper {
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+
+  .scale-label {
+    transform: scale(0);
+    animation: scale-label 1s var(--i) forwards;
+  }
+
+  @keyframes scale-label {
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
