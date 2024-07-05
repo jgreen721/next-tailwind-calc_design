@@ -3,7 +3,7 @@ import { UserResults,ResultsDisplay } from './components'
 
 const Results = ({submitted,monthly,total}:any) => {
   return (
-    <div className="bg-medium-dark relative h-full p-5 flex-1">
+    <div className="bg-medium-dark relative h-full p-5 flex-1 slide-panel-right">
      
        <UserResults submitted={submitted} monthly={monthly} total={total}/>
       

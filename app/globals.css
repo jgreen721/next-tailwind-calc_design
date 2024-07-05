@@ -45,6 +45,17 @@ body {
     }
   }
 
+  .slide-panel-right {
+    transform: translateX(-100%);
+    animation: slide-panel-right 2s 2s forwards;
+  }
+
+  @keyframes slide-panel-right {
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .fade-away {
     /* position: absolute; */
     animation: fadeaway 2s forwards;
